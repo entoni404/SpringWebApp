@@ -17,7 +17,6 @@ public class UserMapper {
 
     public UserResource toDTO(User user) {
         return new UserResource(
-                user.getId(),
                 user.getUsername(),
                 user.getRole(),
                 user.getUserDetails() != null ? userDetailsMapper.toDTO(user.getUserDetails()) : null

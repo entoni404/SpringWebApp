@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 
 import org.springframework.transaction.annotation.Transactional;
+
 import java.util.List;
 
 @Service
@@ -44,7 +45,7 @@ public class UserService {
     @Transactional
     public UserResource saveUser(User user) {
         if (user.getUserDetails() != null) {
-            user.getUserDetails().setUser(user); // Ensure UserDetails is properly linked
+            user.getUserDetails().setUser(user);
         }
         return userMapper.toDTO(userRepository.save(user));
     }

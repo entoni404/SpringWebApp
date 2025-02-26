@@ -11,7 +11,6 @@ public class UserDetailsMapper {
 
     public UserDetailsResource toDTO(UserDetails userDetails) {
         return new UserDetailsResource(
-                userDetails.getId(),
                 userDetails.getFirstName(),
                 userDetails.getLastName(),
                 userDetails.getEmail(),

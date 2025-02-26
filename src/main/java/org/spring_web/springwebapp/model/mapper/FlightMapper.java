@@ -11,7 +11,6 @@ public class FlightMapper {
 
     public FlightResource toDTO(Flight flight) {
         return new FlightResource(
-                flight.getId(),
                 flight.getOrigin(),
                 flight.getDestination(),
                 flight.getAirline(),

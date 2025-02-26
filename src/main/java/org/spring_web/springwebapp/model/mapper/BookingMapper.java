@@ -12,7 +12,6 @@ public class BookingMapper {
 
     public BookingResource toDTO(Booking booking) {
         return new BookingResource(
-                booking.getId(),
                 booking.getStatus(),
                 booking.getBookingDate().toString(),
                 booking.getUser().getId(),

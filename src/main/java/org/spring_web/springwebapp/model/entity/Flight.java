@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import org.spring_web.springwebapp.model.enums.FlightStatus;
 
 import java.time.LocalDate;
-import java.util.Date;
+
 import java.util.List;
 import java.util.Objects;
 
